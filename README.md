@@ -32,7 +32,9 @@ james@neurogami.com
 
 
 [jamesbritt.com](http://jamesbritt.com) 
+
 [neurogami.com](http://neurogami.com) 
+
 [justthebestparts.com](http://justthebestparts.com)
 
 
