@@ -13,10 +13,10 @@ final static int TRUE    = 4;
 final static int FALSE   = 8;
 
 String  textRegex        = "(\")(.+)(\")";
-Pattern isTextPattern    = Pattern.compile(textRegex);
-Pattern isIntPattern     = Pattern.compile("^[0-9]+$");
-Pattern isFloatPattern   = Pattern.compile("^[0-9\\.]+$");
-Pattern isBooleanPattern = Pattern.compile("^[TFtf]");
+java.util.regex.Pattern isTextPattern    = java.util.regex.Pattern.compile(textRegex);
+java.util.regex.Pattern isIntPattern     = java.util.regex.Pattern.compile("^[0-9]+$");
+java.util.regex.Pattern isFloatPattern   = java.util.regex.Pattern.compile("^[0-9\\.]+$");
+java.util.regex.Pattern isBooleanPattern = java.util.regex.Pattern.compile("^[TFtf]");
 
 
 
@@ -103,7 +103,7 @@ void sendOSC(){
 
 int getDataType( String arg ) {
 
-  Matcher ma = isTextPattern.matcher(arg);   
+  java.util.regex.Matcher ma = isTextPattern.matcher(arg);   
   if (ma.find()) {
     return STRING;
   } else {

@@ -20,11 +20,6 @@ String sliderScreenPattern = "/1";
 String sliderPattern = "/fader";
 String configFile = "config.txt";
 
-
-
-int canvasWidth =  600;
-int canvasHeight = 680;
-
 class NGSlider extends GWSlider {
 
   private int index = -1; 
@@ -71,7 +66,7 @@ void buildUI() {
 
   GComponent.globalColor = GCScheme.getColor(this,  GCScheme.GREY_SCHEME);
 
-  size(canvasWidth, canvasHeight);
+  size(600, 680);
 
   int defaultIndentation = 10;
   int charSize           = 6;
@@ -93,7 +88,7 @@ void buildUI() {
   y = 10;
 
 
-  headerLabel = new GLabel(this, "Just the Best Parts: OSC for Artists - www.justthebestparts.com", 0, y, canvasWidth-150, basicHeight);
+  headerLabel = new GLabel(this, "Just the Best Parts: OSC for Artists - www.justthebestparts.com", 0, y, width-150, basicHeight);
 
   headerLabel.setFont("Arial", 18);
   headerLabel.setTextAlign(GAlign.CENTER);
@@ -132,7 +127,7 @@ void buildUI() {
 
   sendOscButton = new GButton(this, "Send ", x, y, 60, basicHeight);
 
-  updateDataButton = new GButton(this, "Update ", canvasWidth - 90, y, 70, basicHeight);
+  updateDataButton = new GButton(this, "Update ", width - 90, y, 70, basicHeight);
 
   for(int i = 1; i< 6; i++){
     y = y + offsetHeight + basicHeight*3;

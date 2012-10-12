@@ -9,7 +9,7 @@ end
 
 
 def zip_file_name
- 'osc_commander.zip'
+ 'osc_commander.source.zip'
 end
 
 def zip_dir
@@ -38,3 +38,6 @@ task :zip do
    `rm -rf "#{zip_dir}"`  if File.exist?  zip_dir
 
 end
+
+
+task :default => :zip
