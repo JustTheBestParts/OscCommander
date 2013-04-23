@@ -3,7 +3,7 @@
 
 OSC Commander is a Processing sketch written as part of the book, Just the Best Parts: OSC for Artists 
 
-[http://www.justthebestparts.com/books/osc/](http://www.justthebestparts.com/books/osc/)
+[http://osc.justthebestparts.com](http://osc.justthebestparts.com)
 
 
 
